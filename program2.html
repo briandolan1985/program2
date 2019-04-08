@@ -1,0 +1,22 @@
+<html>
+<body>
+  <h2>Methods</h2>
+
+  <p id="band"></p>
+
+  <script>
+    //create our object
+    var music = {
+      bandName: "Fall Out Boy",
+      bandGenre: "Rock",
+      bandOrigin : "Chicago",
+      bandInfo : function() {
+        return this.bandName + " is from the city of " + this.bandOrigin
+      }
+    };
+
+    //Display results
+    document.getElementById("band").innerHTML = music.bandInfo();
+</script>
+</body>
+</html>
